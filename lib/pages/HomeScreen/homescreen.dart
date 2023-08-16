@@ -147,6 +147,29 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  "Champions League",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                Icon(
+                  Icons.arrow_drop_up,
+                  color: Colors.black,
+                  size: 30,
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
