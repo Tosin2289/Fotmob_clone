@@ -91,28 +91,62 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 40,
-                width: 60,
+                height: 35,
+                width: 55,
                 decoration: BoxDecoration(
-                  color: Colors.green[700],
-                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.green[800],
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: const [
                     Text(
                       "FRI",
-                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     Text(
                       "16 Apr",
-                      style: TextStyle(color: Colors.white, fontSize: 10),
+                      style: TextStyle(color: Colors.white, fontSize: 12),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 30,
+                width: 60,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: const [
+                    Text(
+                      "SAT",
+                      style: TextStyle(color: Colors.black, fontSize: 15),
+                    ),
+                    Text(
+                      "17 Apr",
+                      style: TextStyle(color: Colors.grey, fontSize: 10),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 30,
+                width: 60,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: const [
+                    Text(
+                      "SUN",
+                      style: TextStyle(color: Colors.black, fontSize: 15),
+                    ),
+                    Text(
+                      "18 Apr",
+                      style: TextStyle(color: Colors.grey, fontSize: 10),
                     ),
                   ],
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
