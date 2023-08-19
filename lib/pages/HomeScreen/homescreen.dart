@@ -176,9 +176,34 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-              child: Container(
-            color: Colors.white,
-          ))
+            child: Container(
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: const [
+                          Text(
+                            "Table",
+                            style: TextStyle(color: Colors.green),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            color: Colors.green,
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
