@@ -182,22 +182,67 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: const [
-                          Text(
-                            "Table",
-                            style: TextStyle(color: Colors.green),
-                          ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Icon(
-                            Icons.arrow_forward_ios,
-                            color: Colors.green,
-                          )
-                        ],
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              "Table",
+                              style: TextStyle(
+                                  color: Colors.green.shade800,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              width: 5,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.green,
+                            )
+                          ],
+                        ),
                       ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      SizedBox(
+                        height: 90,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                child: SizedBox(
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: const [
+                                  Text(
+                                    "29 APR",
+                                    style: TextStyle(
+                                        fontSize: 16, color: Colors.grey),
+                                  ),
+                                  Text(
+                                    "8:00 PM",
+                                    style: TextStyle(
+                                        fontSize: 16, color: Colors.grey),
+                                  ),
+                                ],
+                              ),
+                            )),
+                            Expanded(
+                                flex: 4,
+                                child: Container(
+                                  color: Colors.blue,
+                                )),
+                            Expanded(
+                                child: Container(
+                              color: Colors.green,
+                            )),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ],
