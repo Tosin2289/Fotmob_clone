@@ -204,50 +204,95 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const SizedBox(
-                        height: 10,
-                      ),
                       SizedBox(
-                        height: 90,
+                        height: 80,
                         child: Row(
                           children: [
                             Expanded(
+                                flex: 2,
                                 child: SizedBox(
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: const [
-                                  Text(
-                                    "29 APR",
-                                    style: TextStyle(
-                                        fontSize: 16, color: Colors.grey),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 12.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "29 APR",
+                                          style: TextStyle(
+                                              fontSize: 16, color: Colors.grey),
+                                        ),
+                                        Text(
+                                          "8:00 PM",
+                                          style: TextStyle(
+                                              fontSize: 16, color: Colors.grey),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                  Text(
-                                    "8:00 PM",
-                                    style: TextStyle(
-                                        fontSize: 16, color: Colors.grey),
-                                  ),
-                                ],
-                              ),
-                            )),
-                            Expanded(
-                                flex: 4,
-                                child: Container(
-                                  color: Colors.blue,
                                 )),
                             Expanded(
+                                flex: 5,
                                 child: SizedBox(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
                                     child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children:const [
-                                Icon(
-                                  Icons.star_border_outlined,
-                                  color: Colors.grey,
-                                  size: 35,
-                                ),
-                              ],
-                            ))),
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Image.asset(
+                                              "assets/manutd.png",
+                                              height: 25,
+                                            ),
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            const Text(
+                                              "Manchester United",
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Image.asset(
+                                              "assets/chelsea.png",
+                                              height: 25,
+                                            ),
+                                            const SizedBox(
+                                              width: 10,
+                                            ),
+                                            const Text(
+                                              "Chelsea",
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )),
+                            Expanded(
+                                flex: 1,
+                                child: SizedBox(
+                                    child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.star_border_outlined,
+                                        color: Colors.grey,
+                                        size: 35,
+                                      ),
+                                    ],
+                                  ),
+                                ))),
                           ],
                         ),
                       )
