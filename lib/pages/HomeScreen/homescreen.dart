@@ -237,9 +237,17 @@ class HomeScreen extends StatelessWidget {
                                   color: Colors.blue,
                                 )),
                             Expanded(
-                                child: Container(
-                              color: Colors.green,
-                            )),
+                                child: SizedBox(
+                                    child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children:const [
+                                Icon(
+                                  Icons.star_border_outlined,
+                                  color: Colors.grey,
+                                  size: 35,
+                                ),
+                              ],
+                            ))),
                           ],
                         ),
                       )
