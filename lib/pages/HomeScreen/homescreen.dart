@@ -181,98 +181,97 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: Colors.white,
                 child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
-                      SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  Text(
-                                    "Table",
-                                    style: TextStyle(
-                                        color: Colors.green.shade800,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  const Icon(
-                                    Icons.arrow_forward_ios,
-                                    color: Colors.green,
-                                  )
-                                ],
-                              ),
+                      Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "Table",
+                                  style: TextStyle(
+                                      color: Colors.green.shade800,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                const Icon(
+                                  Icons.arrow_forward_ios,
+                                  color: Colors.green,
+                                )
+                              ],
                             ),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Manchester United",
-                                team2: "Chelsea"),
-                            Divider(),
-                            const Gamecard(
-                                date: "12 JUN",
-                                time: "1:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Real Madrid",
-                                team2: "Dortmound"),
-                            Divider(),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "A.S.Roma",
-                                team2: "Lazio"),
-                            Divider(),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Sevilla",
-                                team2: "Real Betis"),
-                            Divider(),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Real Madrid",
-                                team2: "Barcelona"),
-                            Divider(),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Valencia",
-                                team2: "Chelsea"),
-                            Divider(),
-                            const Gamecard(
-                                date: "12 JUN",
-                                time: "1:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Real Madrid",
-                                team2: "Dortmound"),
-                            Divider(),
-                            const Gamecard(
-                                date: "29 APR",
-                                time: "8:00 PM",
-                                logo1: "assets/manutd.png",
-                                logo2: "assets/chelsea.png",
-                                team1: "Valencia",
-                                team2: "Chelsea"),
-                          ],
-                        ),
+                          ),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Manchester United",
+                              team2: "Chelsea"),
+                          Divider(),
+                          const Gamecard(
+                              date: "12 JUN",
+                              time: "1:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Real Madrid",
+                              team2: "Dortmound"),
+                          Divider(),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "A.S.Roma",
+                              team2: "Lazio"),
+                          Divider(),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Sevilla",
+                              team2: "Real Betis"),
+                          Divider(),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Real Madrid",
+                              team2: "Barcelona"),
+                          Divider(),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Valencia",
+                              team2: "Chelsea"),
+                          Divider(),
+                          const Gamecard(
+                              date: "12 JUN",
+                              time: "1:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Real Madrid",
+                              team2: "Dortmound"),
+                          Divider(),
+                          const Gamecard(
+                              date: "29 APR",
+                              time: "8:00 PM",
+                              logo1: "assets/manutd.png",
+                              logo2: "assets/chelsea.png",
+                              team1: "Valencia",
+                              team2: "Chelsea"),
+                        ],
                       ),
                     ],
                   ),
