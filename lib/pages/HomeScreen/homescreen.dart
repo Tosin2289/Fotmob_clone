@@ -175,133 +175,161 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          Expanded(
-            child: Container(
-              color: Colors.white,
-              child: Column(
-                children: [
-                  Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Text(
-                              "Table",
-                              style: TextStyle(
-                                  color: Colors.green.shade800,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            const Icon(
-                              Icons.arrow_forward_ios,
-                              color: Colors.green,
-                            )
-                          ],
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Expanded(
+              child: Container(
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text(
+                                "Table",
+                                style: TextStyle(
+                                    color: Colors.green.shade800,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.green,
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 80,
-                        child: Row(
-                          children: [
-                            Expanded(
-                                flex: 2,
-                                child: SizedBox(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        vertical: 12.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: const [
-                                        Text(
-                                          "29 APR",
-                                          style: TextStyle(
-                                              fontSize: 16, color: Colors.grey),
-                                        ),
-                                        Text(
-                                          "8:00 PM",
-                                          style: TextStyle(
-                                              fontSize: 16, color: Colors.grey),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                )),
-                            Expanded(
-                                flex: 5,
-                                child: SizedBox(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Image.asset(
-                                              "assets/manutd.png",
-                                              height: 25,
-                                            ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            const Text(
-                                              "Manchester United",
-                                              style: TextStyle(fontSize: 18),
-                                            ),
-                                          ],
-                                        ),
-                                        Row(
-                                          children: [
-                                            Image.asset(
-                                              "assets/chelsea.png",
-                                              height: 25,
-                                            ),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            const Text(
-                                              "Chelsea",
-                                              style: TextStyle(fontSize: 18),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                )),
-                            Expanded(
-                                flex: 1,
-                                child: SizedBox(
-                                    child: Padding(
-                                  padding: const EdgeInsets.all(12.0),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: const [
-                                      Icon(
-                                        Icons.star_border_outlined,
-                                        color: Colors.grey,
-                                        size: 35,
-                                      ),
-                                    ],
-                                  ),
-                                ))),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ],
+                        const Gamecard(
+                            date: "29 APR",
+                            time: "8:00 PM",
+                            logo1: "assets/manutd.png",
+                            logo2: "assets/chelsea.png",
+                            team1: "Manchester United",
+                            team2: "Chelsea"),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class Gamecard extends StatelessWidget {
+  final String date;
+  final String time;
+  final logo1;
+  final logo2;
+  final String team1;
+  final String team2;
+  const Gamecard({
+    super.key,
+    required this.date,
+    required this.time,
+    required this.logo1,
+    required this.logo2,
+    required this.team1,
+    required this.team2,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 80,
+      child: Row(
+        children: [
+          Expanded(
+              flex: 2,
+              child: SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        date,
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                      Text(
+                        time,
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                ),
+              )),
+          Expanded(
+              flex: 5,
+              child: SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            logo1,
+                            height: 25,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            team1,
+                            style: const TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Image.asset(
+                            logo2,
+                            height: 25,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            team2,
+                            style: const TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              )),
+          Expanded(
+              flex: 1,
+              child: SizedBox(
+                  child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.star_border_outlined,
+                      color: Colors.grey,
+                      size: 35,
+                    ),
+                  ],
+                ),
+              ))),
         ],
       ),
     );
