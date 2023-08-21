@@ -210,7 +210,7 @@ class HomeScreen extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/manutd.png",
@@ -218,7 +218,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Manchester United",
                                   team2: "Chelsea"),
                               const Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "12 JUN",
                                   time: "1:00 PM",
                                   logo1: "assets/madrid.png",
@@ -226,7 +226,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Real Madrid",
                                   team2: "Dortmound"),
                               const Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/roma.png",
@@ -234,7 +234,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "A.S.Roma",
                                   team2: "Lazio"),
                               Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/sevilla.png",
@@ -242,7 +242,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Sevilla",
                                   team2: "Real Betis"),
                               const Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/madrid.png",
@@ -250,7 +250,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Real Madrid",
                                   team2: "Barcelona"),
                               Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/valencia.png",
@@ -258,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Valencia",
                                   team2: "Chelsea"),
                               const Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "12 JUN",
                                   time: "1:00 PM",
                                   logo1: "assets/madrid.png",
@@ -266,7 +266,7 @@ class HomeScreen extends StatelessWidget {
                                   team1: "Real Madrid",
                                   team2: "Dortmound"),
                               const Divider(),
-                              const Gamecard(
+                              const Gamecard(ontap: ,
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/valencia.png",
