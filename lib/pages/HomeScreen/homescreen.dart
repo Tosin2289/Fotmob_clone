@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fotmob_clone/pages/HomeScreen/detailsscreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     void navigate() {
       Navigator.push(context, MaterialPageRoute(
         builder: (context) {
-          return DetailsScreen();
+          return const DetailsScreen();
         },
       ));
     }
