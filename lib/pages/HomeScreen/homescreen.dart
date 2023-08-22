@@ -6,14 +6,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void navigate() {
-      Navigator.push(context, MaterialPageRoute(
-        builder: (context) {
-          return const DetailsScreen();
-        },
-      ));
-    }
-
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
@@ -220,7 +212,16 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/manutd.png",
@@ -229,7 +230,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Chelsea"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "12 JUN",
                                   time: "1:00 PM",
                                   logo1: "assets/madrid.png",
@@ -238,7 +248,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Dortmound"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/roma.png",
@@ -247,7 +266,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Lazio"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/sevilla.png",
@@ -256,7 +284,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Real Betis"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/madrid.png",
@@ -265,7 +302,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Barcelona"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/valencia.png",
@@ -274,7 +320,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Chelsea"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "12 JUN",
                                   time: "1:00 PM",
                                   logo1: "assets/madrid.png",
@@ -283,7 +338,16 @@ class HomeScreen extends StatelessWidget {
                                   team2: "Dortmound"),
                               const Divider(),
                               Gamecard(
-                                  ontap: navigate,
+                                  ontap: (team1, team2) {
+                                    Navigator.push(context, MaterialPageRoute(
+                                      builder: (context) {
+                                        return DetailsScreen(
+                                          team1: team1,
+                                          team2: team2,
+                                        );
+                                      },
+                                    ));
+                                  },
                                   date: "29 APR",
                                   time: "8:00 PM",
                                   logo1: "assets/valencia.png",

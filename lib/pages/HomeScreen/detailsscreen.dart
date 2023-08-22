@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({Key? key}) : super(key: key);
+  final String team1;
+  final String team2;
+  const DetailsScreen({Key? key, required this.team1, required this.team2})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
+      appBar: AppBar(
+        centerTitle: true,
         title: Text("Team 1 vs Team 2"),
       ),
     );
