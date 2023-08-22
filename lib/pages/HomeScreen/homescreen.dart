@@ -66,14 +66,6 @@ class HomeScreen extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    void navigate() {
-      Navigator.push(context, MaterialPageRoute(
-        builder: (context) {
-          return const DetailsScreen();
-        },
-      ));
-    }
-
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
@@ -277,7 +269,16 @@ class HomeScreen extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return SizedBox(
                           child: Gamecard(
-                              ontap: navigate,
+                              ontap: () {
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) {
+                                    return DetailsScreen(
+                                      team1: matchdata[index].team1,
+                                      team2: matchdata[index].team2,
+                                    );
+                                  },
+                                ));
+                              },
                               date: matchdata[index].date,
                               time: matchdata[index].time,
                               logo1: matchdata[index].logo1,
