@@ -251,38 +251,34 @@ class HomeScreen extends StatelessWidget {
                 child: Expanded(
                   child: Container(
                     color: Colors.white,
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Column(
-                        children: [
-                          Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    Text(
-                                      "Table",
-                                      style: TextStyle(
-                                          color: Colors.green.shade800,
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(
-                                      width: 5,
-                                    ),
-                                    const Icon(
-                                      Icons.arrow_forward_ios,
-                                      color: Colors.green,
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              "Table",
+                              style: TextStyle(
+                                  color: Colors.green.shade800,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              width: 5,
+                            ),
+                            const Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.green,
+                            )
+                          ],
+                        ),
+                        ListView.builder(
+                          itemCount: matchdata.length,
+                          itemBuilder: (context, index) {
+                            return Container();
+                          },
+                        ),
+                      ],
                     ),
                   ),
                 ),
