@@ -6,7 +6,64 @@ import '../../models/matchmodel.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
-  final List<MatchModel> matchdata = [];
+  final List<MatchModel> matchdata = [
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/manutd.png",
+        logo2: "assets/chelsea.png",
+        team1: "Manchester United",
+        team2: "Chelsea"),
+    MatchModel(
+        date: "12 JUN",
+        time: "1:00 PM",
+        logo1: "assets/madrid.png",
+        logo2: "assets/dortmound.png",
+        team1: "Real Madrid",
+        team2: "Dortmound"),
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/roma.png",
+        logo2: "assets/lazio.png",
+        team1: "A.S.Roma",
+        team2: "Lazio"),
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/sevilla.png",
+        logo2: "assets/betis.png",
+        team1: "Sevilla",
+        team2: "Real Betis"),
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/madrid.png",
+        logo2: "assets/barca.png",
+        team1: "Real Madrid",
+        team2: "Barcelona"),
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/valencia.png",
+        logo2: "assets/chelsea.png",
+        team1: "Valencia",
+        team2: "Chelsea"),
+    MatchModel(
+        date: "12 JUN",
+        time: "1:00 PM",
+        logo1: "assets/madrid.png",
+        logo2: "assets/dortmound.png",
+        team1: "Real Madrid",
+        team2: "Dortmound"),
+    MatchModel(
+        date: "29 APR",
+        time: "8:00 PM",
+        logo1: "assets/valencia.png",
+        logo2: "assets/chelsea.png",
+        team1: "Valencia",
+        team2: "Chelsea")
+  ];
   @override
   Widget build(BuildContext context) {
     void navigate() {
@@ -222,77 +279,6 @@ class HomeScreen extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/manutd.png",
-                                  logo2: "assets/chelsea.png",
-                                  team1: "Manchester United",
-                                  team2: "Chelsea"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "12 JUN",
-                                  time: "1:00 PM",
-                                  logo1: "assets/madrid.png",
-                                  logo2: "assets/dortmound.png",
-                                  team1: "Real Madrid",
-                                  team2: "Dortmound"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/roma.png",
-                                  logo2: "assets/lazio.png",
-                                  team1: "A.S.Roma",
-                                  team2: "Lazio"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/sevilla.png",
-                                  logo2: "assets/betis.png",
-                                  team1: "Sevilla",
-                                  team2: "Real Betis"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/madrid.png",
-                                  logo2: "assets/barca.png",
-                                  team1: "Real Madrid",
-                                  team2: "Barcelona"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/valencia.png",
-                                  logo2: "assets/chelsea.png",
-                                  team1: "Valencia",
-                                  team2: "Chelsea"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "12 JUN",
-                                  time: "1:00 PM",
-                                  logo1: "assets/madrid.png",
-                                  logo2: "assets/dortmound.png",
-                                  team1: "Real Madrid",
-                                  team2: "Dortmound"),
-                              const Divider(),
-                              Gamecard(
-                                  ontap: navigate,
-                                  date: "29 APR",
-                                  time: "8:00 PM",
-                                  logo1: "assets/valencia.png",
-                                  logo2: "assets/chelsea.png",
-                                  team1: "Valencia",
-                                  team2: "Chelsea"),
                             ],
                           ),
                         ],
