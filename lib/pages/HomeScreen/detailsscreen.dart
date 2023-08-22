@@ -5,6 +5,10 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(centerTitle: true,
+        title: Text("Team 1 vs Team 2"),
+      ),
+    );
   }
 }
