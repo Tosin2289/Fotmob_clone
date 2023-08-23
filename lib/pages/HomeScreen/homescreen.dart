@@ -296,30 +296,34 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.sports_soccer,
-            ),
-            label: 'Matches'),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.star,
-            ),
-            label: 'Favourites'),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.batch_prediction,
-            ),
-            label: 'Prediction'),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.newspaper,
-            ),
-            label: 'News'),
-        BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.trophy), label: 'League'),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.green.shade800,
+          unselectedItemColor: Colors.grey,
+          showUnselectedLabels: true,
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.sports_soccer,
+                ),
+                label: 'Matches'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.star,
+                ),
+                label: 'Favourites'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.batch_prediction,
+                ),
+                label: 'Prediction'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.newspaper,
+                ),
+                label: 'News'),
+            BottomNavigationBarItem(
+                icon: Icon(FontAwesomeIcons.trophy), label: 'League'),
+          ]),
     );
   }
 }
