@@ -53,11 +53,16 @@ class DetailsScreen extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 300,
+            height: 150,
             decoration: const BoxDecoration(color: Colors.white),
             child: Center(
               child: Column(
-                children: [],
+                children: const [
+                  Text(
+                    "15.04.2020",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
               ),
             ),
           ),
