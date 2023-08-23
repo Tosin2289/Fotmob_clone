@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:fotmob_clone/pages/HomeScreen/detailsscreen.dart';
 
 import '../../componets/matchcard.dart';
@@ -295,6 +296,30 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: const [
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.sports_soccer,
+            ),
+            label: 'Matches'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.star,
+            ),
+            label: 'Favourites'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.batch_prediction,
+            ),
+            label: 'Prediction'),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.newspaper,
+            ),
+            label: 'News'),
+        BottomNavigationBarItem(
+            icon: Icon(FontAwesomeIcons.trophy), label: 'League'),
+      ]),
     );
   }
 }
