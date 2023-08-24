@@ -135,7 +135,20 @@ class DetailsScreen extends StatelessWidget {
                         child: Icon(Icons.star_border),
                       ),
                     ],
-                  )
+                  ),
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  Expanded(
+                      child: SizedBox(
+                    height: 50,
+                    width: double.infinity,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
+                    ),
+                  ))
                 ],
               ),
             ),
