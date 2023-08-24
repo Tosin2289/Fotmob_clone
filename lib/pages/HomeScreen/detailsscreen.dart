@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DetailsScreen extends StatelessWidget {
+class DetailsScreen extends StatefulWidget {
   final String team1;
   final String team2;
   final logo1;
@@ -15,6 +15,19 @@ class DetailsScreen extends StatelessWidget {
       required this.time})
       : super(key: key);
 
+  @override
+  State<DetailsScreen> createState() => _DetailsScreenState();
+}
+
+class _DetailsScreenState extends State<DetailsScreen> {
+  final List items = [
+    "Predict",
+    "Comment",
+    "Preview",
+    "Line-up",
+    "H2H",
+  ];
+  int currentindex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,11 +97,11 @@ class DetailsScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Image.asset(
-                              logo1,
+                              widget.logo1,
                               height: 40,
                             ),
                             Text(
-                              team1.toString(),
+                              widget.team1.toString(),
                               style: const TextStyle(),
                             )
                           ],
@@ -106,7 +119,7 @@ class DetailsScreen extends StatelessWidget {
                             ),
                             const Icon(Icons.minimize_outlined),
                             Text(
-                              time,
+                              widget.time,
                               style: const TextStyle(color: Colors.grey),
                             ),
                           ],
@@ -119,11 +132,11 @@ class DetailsScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Image.asset(
-                              logo2,
+                              widget.logo2,
                               height: 40,
                             ),
                             Text(
-                              team2.toString(),
+                              widget.team2.toString(),
                               style: const TextStyle(),
                             )
                           ],
@@ -137,15 +150,34 @@ class DetailsScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    height: 8,
+                    height: 15,
                   ),
                   Expanded(
                       child: SizedBox(
                     height: 50,
                     width: double.infinity,
                     child: ListView.builder(
+                      itemCount: items.length,
+                      scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container();
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              currentindex = index;
+                            });
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 50,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)),
+                              child: Text(items[index].toString()),
+                            ),
+                          ),
+                        );
                       },
                     ),
                   ))
