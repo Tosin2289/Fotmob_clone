@@ -27,6 +27,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
     "Line-up",
     "H2H",
   ];
+  final List item = [
+    "Predict",
+    "Comment",
+    "Preview",
+    "Line-up",
+    "H2H",
+  ];
   int currentindex = 0;
   @override
   Widget build(BuildContext context) {
@@ -181,21 +188,22 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                   child: Text(
                                 items[index].toString(),
                                 style: TextStyle(
-                                  color: currentindex == index
-                                      ? Colors.white
-                                      : Colors.black,
-                                ),
+                                    color: currentindex == index
+                                        ? Colors.white
+                                        : Colors.black,
+                                    fontWeight: FontWeight.w500),
                               )),
                             ),
                           ),
                         );
                       },
                     ),
-                  ))
+                  )),
                 ],
               ),
             ),
           ),
+          Center(child: Text(item[currentindex]))
         ],
       ),
     );
