@@ -150,11 +150,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     ],
                   ),
                   const SizedBox(
-                    height: 15,
+                    height: 8,
                   ),
                   Expanded(
                       child: SizedBox(
-                    height: 50,
+                    height: 80,
                     width: double.infinity,
                     child: ListView.builder(
                       itemCount: items.length,
@@ -168,13 +168,24 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              height: 50,
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 300),
+                              height: 80,
                               width: 100,
                               decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: currentindex == index
+                                      ? Colors.green.shade800
+                                      : Colors.white,
                                   borderRadius: BorderRadius.circular(8)),
-                              child: Text(items[index].toString()),
+                              child: Center(
+                                  child: Text(
+                                items[index].toString(),
+                                style: TextStyle(
+                                  color: currentindex == index
+                                      ? Colors.white
+                                      : Colors.black,
+                                ),
+                              )),
                             ),
                           ),
                         );
