@@ -70,31 +70,69 @@ class DetailsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      SizedBox(
-                        height: 80,
-                        width: 50,
+                      const SizedBox(
+                        height: 90,
+                        width: 40,
                         child: Icon(Icons.star_border),
                       ),
                       SizedBox(
                         height: 80,
-                        width: 50,
+                        width: 75,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [],
+                          children: [
+                            Image.asset(
+                              logo1,
+                              height: 40,
+                            ),
+                            Text(
+                              team1.toString(),
+                              style: const TextStyle(),
+                            )
+                          ],
                         ),
                       ),
                       SizedBox(
                         height: 80,
-                        width: 50,
+                        width: 75,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            const Text(
+                              "15.04.2020",
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            const Icon(Icons.minimize_outlined),
+                            Text(
+                              time,
+                              style: const TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         height: 80,
-                        width: 50,
+                        width: 75,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              logo2,
+                              height: 40,
+                            ),
+                            Text(
+                              team2.toString(),
+                              style: const TextStyle(),
+                            )
+                          ],
+                        ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 80,
-                        width: 50,
+                        width: 40,
+                        child: Icon(Icons.star_border),
                       ),
                     ],
                   )
