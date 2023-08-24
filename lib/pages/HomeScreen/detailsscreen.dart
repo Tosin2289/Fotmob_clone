@@ -15,9 +15,14 @@ class DetailsScreen extends StatelessWidget {
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: const Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
         ),
         elevation: 0,
         centerTitle: true,
@@ -57,11 +62,36 @@ class DetailsScreen extends StatelessWidget {
             decoration: const BoxDecoration(color: Colors.white),
             child: Center(
               child: Column(
-                children: const [
-                  Text(
-                    "15.04.2020",
-                    style: TextStyle(color: Colors.grey),
-                  ),
+                children: [
+                  Row(
+                    children: [
+                      SizedBox(
+                        height: 80,
+                        width: 50,
+                        child: Icon(Icons.star_border),
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 50,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 50,
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 50,
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 50,
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
