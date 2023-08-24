@@ -276,6 +276,9 @@ class HomeScreen extends StatelessWidget {
                                     return DetailsScreen(
                                       team1: matchdata[index].team1,
                                       team2: matchdata[index].team2,
+                                      logo1: matchdata[index].logo1,
+                                      logo2: matchdata[index].logo2,
+                                      time: matchdata[index].time,
                                     );
                                   },
                                 ));

@@ -3,11 +3,17 @@ import 'package:flutter/material.dart';
 class DetailsScreen extends StatelessWidget {
   final String team1;
   final String team2;
-  const DetailsScreen({
-    Key? key,
-    required this.team1,
-    required this.team2,
-  }) : super(key: key);
+  final logo1;
+  final logo2;
+  final String time;
+  const DetailsScreen(
+      {Key? key,
+      required this.team1,
+      required this.team2,
+      required this.logo1,
+      required this.logo2,
+      required this.time})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
