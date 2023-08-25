@@ -163,6 +163,7 @@ class Predict extends StatelessWidget {
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.black38),
                                 borderRadius: BorderRadius.circular(10)),
+                            child: Image.asset("assets/bet9ja.png"),
                           ),
                         ],
                       ),
@@ -177,6 +178,9 @@ class Predict extends StatelessWidget {
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(10)),
+                              child: const Center(
+                                child: Text("1 3.50"),
+                              ),
                             ),
                           ),
                           Padding(
@@ -187,6 +191,9 @@ class Predict extends StatelessWidget {
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(10)),
+                              child: const Center(
+                                child: Text("x 3.50"),
+                              ),
                             ),
                           ),
                           Padding(
@@ -197,6 +204,9 @@ class Predict extends StatelessWidget {
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(10)),
+                              child: const Center(
+                                child: Text("2 3.50"),
+                              ),
                             ),
                           ),
                         ],
