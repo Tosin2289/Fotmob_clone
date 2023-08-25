@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Predict extends StatelessWidget {
-  const Predict({Key? key}) : super(key: key);
+  final team1;
+  final team2;
+  const Predict({Key? key, required this.team1, required this.team2})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +16,14 @@ class Predict extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
+              children: [
+                const Text(
                   "Predict",
                   style: TextStyle(color: Colors.black, fontSize: 22),
                 ),
                 Text(
                   "Leader Board",
-                  style: TextStyle(color: Colors.green, fontSize: 16),
+                  style: TextStyle(color: Colors.green.shade700, fontSize: 16),
                 ),
               ],
             ),
@@ -68,9 +71,9 @@ class Predict extends StatelessWidget {
                               const SizedBox(
                                 height: 10,
                               ),
-                              const Text(
-                                "Team1",
-                                style: TextStyle(
+                              Text(
+                                team1.toString(),
+                                style: const TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 14),
                               )
                             ],
@@ -122,9 +125,9 @@ class Predict extends StatelessWidget {
                               const SizedBox(
                                 height: 10,
                               ),
-                              const Text(
-                                "Team2",
-                                style: TextStyle(
+                              Text(
+                                team2.toString(),
+                                style: const TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 14),
                               )
                             ],
@@ -137,6 +140,88 @@ class Predict extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Container(
+              height: 110,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(10)),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 40,
+                            width: 70,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: Colors.black38),
+                                borderRadius: BorderRadius.circular(10)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 40,
+                              width: 70,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(10)),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 40,
+                              width: 70,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(10)),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 40,
+                              width: 70,
+                              decoration: BoxDecoration(
+                                  color: Colors.grey.shade300,
+                                  borderRadius: BorderRadius.circular(10)),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.warning,
+                        color: Colors.grey,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text("Gamble responsibly,Gambling Therapy,18+")
+                    ],
+                  )
+                ]),
+              ),
+            ),
+          )
         ],
       ),
     );

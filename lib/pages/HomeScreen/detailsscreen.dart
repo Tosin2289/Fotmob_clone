@@ -33,16 +33,20 @@ class _DetailsScreenState extends State<DetailsScreen> {
     "Line-up",
     "H2H",
   ];
-  final List item = [
-    const Predict(),
-    const Comment(),
-    const Preview(),
-    const LineUp(),
-    const H2H(),
-  ];
+
   int currentindex = 0;
   @override
   Widget build(BuildContext context) {
+    final List item = [
+      Predict(
+        team1: widget.team1,
+        team2: widget.team2,
+      ),
+      const Comment(),
+      const Preview(),
+      const LineUp(),
+      const H2H(),
+    ];
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
