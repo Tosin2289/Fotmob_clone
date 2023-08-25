@@ -209,7 +209,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
               ),
             ),
           ),
-          Center(child: Text(item[currentindex]))
+          Center(child: item[currentindex])
         ],
       ),
     );
