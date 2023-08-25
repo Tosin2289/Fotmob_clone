@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../detailsscreenelements/comment.dart';
+import '../detailsscreenelements/h2h.dart';
+import '../detailsscreenelements/line-up.dart';
+import '../detailsscreenelements/predict.dart';
+import '../detailsscreenelements/preview.dart';
+
 class DetailsScreen extends StatefulWidget {
   final String team1;
   final String team2;
@@ -28,11 +34,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
     "H2H",
   ];
   final List item = [
-    "Predict",
-    "Comment",
-    "Preview",
-    "Line-up",
-    "H2H",
+    const Predict(),
+    const Comment(),
+    const Preview(),
+    const LineUp(),
+    const H2H(),
   ];
   int currentindex = 0;
   @override
