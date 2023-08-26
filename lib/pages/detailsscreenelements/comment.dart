@@ -7,7 +7,7 @@ class Comment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(1.0),
         child: Column(
           children: [
             const comment(
@@ -32,10 +32,34 @@ class Comment extends StatelessWidget {
             ),
             Container(
               height: 80,
-              decoration: BoxDecoration(color: Colors.white),
+              width: double.infinity,
+              decoration: const BoxDecoration(color: Colors.white),
               child: Center(
                 child: Row(
-                  children: [],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 50,
+                      width: 250,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          fillColor: Colors.grey.shade200,
+                          filled: true,
+                          hintText: 'Send a Message',
+                          border: OutlineInputBorder(),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    const Icon(
+                      Icons.send,
+                      color: Colors.grey,
+                      size: 35,
+                    )
+                  ],
                 ),
               ),
             )
