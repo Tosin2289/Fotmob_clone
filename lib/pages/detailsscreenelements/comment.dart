@@ -10,22 +10,22 @@ class Comment extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            comment(
+            const comment(
               name: 'Wizu',
               flag: 'assets/isreal.png',
               color: Colors.red,
             ),
-            comment(
+            const comment(
               name: 'Morefee',
               flag: 'assets/brazil.jpg',
               color: Colors.green,
             ),
-            comment(
+            const comment(
               name: 'Bigmoe',
               flag: 'assets/nigeria.png',
               color: Colors.pink,
             ),
-            comment(
+            const comment(
               name: 'Sala',
               flag: 'assets/cameroon.png',
               color: Colors.purple,
