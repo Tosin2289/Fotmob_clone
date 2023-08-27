@@ -42,8 +42,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
         team1: widget.team1,
         team2: widget.team2,
       ),
-      Comment(),
-      const Preview(),
+      const Comment(),
+      Preview(
+        logo1: widget.logo1,
+        logo2: widget.logo2,
+        team1: widget.team1,
+        team2: widget.team2,
+      ),
       const LineUp(),
       const H2H(),
     ];

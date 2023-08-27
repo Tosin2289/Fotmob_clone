@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Preview extends StatelessWidget {
-  const Preview({Key? key}) : super(key: key);
+  final logo1;
+  final logo2;
+  final String team1;
+  final String team2;
+  const Preview({
+    Key? key,
+    required this.logo1,
+    required this.logo2,
+    required this.team1,
+    required this.team2,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +65,92 @@ class Preview extends StatelessWidget {
                         text2: "Venue",
                         text: "Old traffold",
                       ),
-                      const Divider(),
                     ],
                   )),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(children: [
+                    Row(
+                      children: const [
+                        Text("Team Form",
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 10,
+                              width: 10,
+                              decoration: const BoxDecoration(
+                                  color: Colors.green, shape: BoxShape.circle),
+                            ),
+                            const SizedBox(
+                              width: 3,
+                            ),
+                            const Text("Win")
+                          ],
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              height: 10,
+                              width: 10,
+                              decoration: const BoxDecoration(
+                                  color: Colors.grey, shape: BoxShape.circle),
+                            ),
+                            const SizedBox(
+                              width: 3,
+                            ),
+                            const Text("Draw")
+                          ],
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              height: 10,
+                              width: 10,
+                              decoration: const BoxDecoration(
+                                  color: Colors.red, shape: BoxShape.circle),
+                            ),
+                            const SizedBox(
+                              width: 3,
+                            ),
+                            const Text("Lose")
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Divider(),
+                    Row(
+                      children: [],
+                    ),
+                  ]),
+                ),
+              ),
+            ),
           ],
         ),
       ),
