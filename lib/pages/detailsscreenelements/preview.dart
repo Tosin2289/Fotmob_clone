@@ -507,6 +507,7 @@ class Preview extends StatelessWidget {
               child: Container(
                 height: 300,
                 decoration: BoxDecoration(
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
