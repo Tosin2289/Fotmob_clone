@@ -12,13 +12,17 @@ class DetailsScreen extends StatefulWidget {
   final logo1;
   final logo2;
   final String time;
+  final color1;
+  final color2;
   const DetailsScreen(
       {Key? key,
       required this.team1,
       required this.team2,
       required this.logo1,
       required this.logo2,
-      required this.time})
+      required this.time,
+      required this.color1,
+      required this.color2})
       : super(key: key);
 
   @override
@@ -44,11 +48,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
       ),
       const Comment(),
       Preview(
-        logo1: widget.logo1,
-        logo2: widget.logo2,
-        team1: widget.team1,
-        team2: widget.team2,
-      ),
+          logo1: widget.logo1,
+          logo2: widget.logo2,
+          team1: widget.team1,
+          team2: widget.team2,
+          color2: widget.color2,
+          color1: widget.color1),
       const LineUp(),
       const H2H(),
     ];

@@ -5,12 +5,16 @@ class Preview extends StatelessWidget {
   final logo2;
   final String team1;
   final String team2;
+  final color1;
+  final color2;
   const Preview({
     Key? key,
     required this.logo1,
     required this.logo2,
     required this.team1,
     required this.team2,
+    required this.color1,
+    required this.color2,
   }) : super(key: key);
 
   @override
@@ -411,11 +415,30 @@ class Preview extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Image.asset(
-                            logo1,height: 30,
+                            logo1,
+                            height: 30,
                           ),
                           Image.asset(
-                            logo2,height: 30,
-                          )
+                            logo2,
+                            height: 30,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("1.6"),
+                          Text("Shots", style: TextStyle(color: Colors.grey)),
+                          Text("1.1")
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Expanded(child: Container()),
+                          Expanded(child: Container()),
                         ],
                       ),
                     ],

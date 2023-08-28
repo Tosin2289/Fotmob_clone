@@ -295,6 +295,8 @@ class HomeScreen extends StatelessWidget {
                                       logo1: matchdata[index].logo1,
                                       logo2: matchdata[index].logo2,
                                       time: matchdata[index].time,
+                                      color1: matchdata[index].color1,
+                                      color2: matchdata[index].color2,
                                     );
                                   },
                                 ));
