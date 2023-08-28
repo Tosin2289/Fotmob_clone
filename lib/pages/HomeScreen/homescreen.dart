@@ -15,7 +15,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/chelsea.png",
         team1: "Manchester United",
         team2: "Chelsea",
-        color: Colors.blue),
+        color2: Colors.blue.shade900,
+        color1: Colors.red),
     MatchModel(
         date: "12 JUN",
         time: "1:00 PM",
@@ -23,7 +24,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/dortmound.png",
         team1: "Real Madrid",
         team2: "Dortmound",
-        color: Colors.yellow),
+        color2: Colors.yellow,
+        color1: Colors.blueGrey),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
@@ -31,7 +33,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/lazio.png",
         team1: "A.S.Roma",
         team2: "Lazio",
-        color: Colors.lightBlue),
+        color2: Colors.lightBlue,
+        color1: Colors.red),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
@@ -39,7 +42,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/betis.png",
         team1: "Sevilla",
         team2: "Real Betis",
-        color: Colors.green),
+        color2: Colors.green,
+        color1: Colors.yellow),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
@@ -47,7 +51,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/barca.png",
         team1: "Real Madrid",
         team2: "Barcelona",
-        color: Colors.blueGrey),
+        color1: Colors.blueGrey,
+        color2: Colors.lightBlue.shade900),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
@@ -55,7 +60,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/chelsea.png",
         team1: "Valencia",
         team2: "Chelsea",
-        color: Colors.blue),
+        color2: Colors.blue.shade900,
+        color1: Colors.red),
     MatchModel(
         date: "12 JUN",
         time: "1:00 PM",
@@ -63,7 +69,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/dortmound.png",
         team1: "Real Madrid",
         team2: "Dortmound",
-        color: Colors.yellow),
+        color2: Colors.yellow,
+        color1: Colors.blueGrey),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
@@ -71,7 +78,8 @@ class HomeScreen extends StatelessWidget {
         logo2: "assets/chelsea.png",
         team1: "Valencia",
         team2: "Chelsea",
-        color: Colors.red)
+        color1: Colors.red,
+        color2: Colors.blue)
   ];
   @override
   Widget build(BuildContext context) {
