@@ -301,6 +301,8 @@ class HomeScreen extends StatelessWidget {
                                   },
                                 ));
                               },
+                              color1: matchdata[index].color1,
+                              color2: matchdata[index].color2,
                               date: matchdata[index].date,
                               time: matchdata[index].time,
                               logo1: matchdata[index].logo1,

@@ -393,7 +393,7 @@ class Preview extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: 400,
+                height:350,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
@@ -427,20 +427,73 @@ class Preview extends StatelessWidget {
                       const SizedBox(
                         height: 15,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("1.6"),
-                          Text("Shots", style: TextStyle(color: Colors.grey)),
-                          Text("1.1")
-                        ],
+                      const compar(
+                        description: 'Shots',
                       ),
-                      Row(
-                        children: [
-                          Expanded(child: Container()),
-                          Expanded(child: Container()),
-                        ],
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
                       ),
+                      const compar(
+                        description: 'Shots on target',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Goals',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Passes',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Completed Passes',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Crosses',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Long balls',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Tackles attemted',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Tackles succeeded',
+                      ),
+                      bar(color1: color1, color2: color2),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const compar(
+                        description: 'Fouls',
+                      ),
+                      bar(color1: color1, color2: color2),
                     ],
                   ),
                 ),
@@ -449,6 +502,59 @@ class Preview extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class bar extends StatelessWidget {
+  const bar({
+    super.key,
+    required this.color1,
+    required this.color2,
+  });
+
+  final color1;
+  final color2;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+            child: Container(
+          height: 5,
+          decoration: BoxDecoration(
+            color: color1,
+            borderRadius: BorderRadius.circular(10),
+          ),
+        )),
+        Expanded(
+            child: Container(
+          height: 5,
+          decoration: BoxDecoration(
+            color: color2,
+            borderRadius: BorderRadius.circular(10),
+          ),
+        )),
+      ],
+    );
+  }
+}
+
+class compar extends StatelessWidget {
+  final description;
+  const compar({super.key, required this.description});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        const Text("1.6"),
+        Text(description.toString(),
+            style: const TextStyle(color: Colors.grey)),
+        const Text("1.1")
+      ],
     );
   }
 }

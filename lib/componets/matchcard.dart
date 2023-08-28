@@ -8,16 +8,19 @@ class Gamecard extends StatelessWidget {
   final logo2;
   final String team1;
   final String team2;
-  const Gamecard({
-    super.key,
-    required this.ontap,
-    required this.date,
-    required this.time,
-    required this.logo1,
-    required this.logo2,
-    required this.team1,
-    required this.team2,
-  });
+  final color1;
+  final color2;
+  const Gamecard(
+      {super.key,
+      required this.ontap,
+      required this.date,
+      required this.time,
+      required this.logo1,
+      required this.logo2,
+      required this.team1,
+      required this.team2,
+      required this.color1,
+      required this.color2});
 
   @override
   Widget build(BuildContext context) {
