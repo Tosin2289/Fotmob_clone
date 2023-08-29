@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../detailsscreenelements/comment.dart';
 import '../detailsscreenelements/h2h.dart';
@@ -228,6 +229,34 @@ class _DetailsScreenState extends State<DetailsScreen> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.green.shade800,
+          unselectedItemColor: Colors.grey,
+          showUnselectedLabels: true,
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.sports_soccer,
+                ),
+                label: 'Matches'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.star,
+                ),
+                label: 'Favourites'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.batch_prediction,
+                ),
+                label: 'Prediction'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.newspaper,
+                ),
+                label: 'News'),
+            BottomNavigationBarItem(
+                icon: Icon(FontAwesomeIcons.trophy), label: 'League'),
+          ]),
     );
   }
 }
