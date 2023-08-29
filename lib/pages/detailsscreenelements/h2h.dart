@@ -35,7 +35,7 @@ class H2H extends StatelessWidget {
             height: 10,
           ),
           Container(
-            height: 160,
+            height: 150,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.white),
             child: Padding(
@@ -47,13 +47,13 @@ class H2H extends StatelessWidget {
                     children: [
                       Image.asset(
                         logo1,
-                        height: 50,
+                        height: 40,
                       ),
                       const Text("Previous Matches(17)",
                           style: TextStyle(color: Colors.grey, fontSize: 18)),
                       Image.asset(
                         logo2,
-                        height: 50,
+                        height: 40,
                       ),
                     ],
                   ),
@@ -114,14 +114,14 @@ class hth extends StatelessWidget {
     return Row(
       children: [
         Container(
-          height: 60,
-          width: 55,
+          height: 50,
+          width: 45,
           decoration: BoxDecoration(
               color: Color, borderRadius: BorderRadius.circular(8)),
           child: Center(
             child: Text(
               text,
-              style: const TextStyle(color: Colors.white, fontSize: 28),
+              style: const TextStyle(color: Colors.white, fontSize: 20),
             ),
           ),
         ),
@@ -129,8 +129,8 @@ class hth extends StatelessWidget {
           width: 4,
         ),
         SizedBox(
-          height: 60,
-          width: 55,
+          height: 50,
+          width: 45,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -138,11 +138,11 @@ class hth extends StatelessWidget {
               Text(
                 outcome,
                 style:
-                    const TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
               ),
               Text(
                 percent,
-                style: const TextStyle(color: Colors.grey, fontSize: 22),
+                style: const TextStyle(color: Colors.grey, fontSize: 18),
               )
             ],
           ),
