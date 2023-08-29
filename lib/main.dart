@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fotmob_clone/pages/HomeScreen/homescreen.dart';
+import 'package:fotmob_clone/pages/Screens/homescreen.dart';
 
 void main() {
   runApp(const MyApp());

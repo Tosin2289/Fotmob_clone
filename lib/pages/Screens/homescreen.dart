@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:fotmob_clone/pages/HomeScreen/detailsscreen.dart';
+import 'package:fotmob_clone/pages/Screens/detailsscreen.dart';
 
 import '../../componets/matchcard.dart';
 import '../../models/matchmodel.dart';
