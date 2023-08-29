@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
         team1: "Sevilla",
         team2: "Real Betis",
         color2: Colors.green,
-        color1: Colors.yellow),
+        color1: Colors.red),
     MatchModel(
         date: "29 APR",
         time: "8:00 PM",
