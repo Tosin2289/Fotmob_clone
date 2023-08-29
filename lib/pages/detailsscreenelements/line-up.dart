@@ -265,7 +265,7 @@ class LineUp extends StatelessWidget {
                         backgroundImage: AssetImage("assets/aub.png"),
                       ),
                       title: const Text("Pierre Emerick"),
-                      subtitle: const Text("Forward"),
+                      subtitle: const Text("Head injury(Doubtful)"),
                       trailing: CircleAvatar(
                         backgroundColor: Colors.red.shade200,
                         radius: 15,
@@ -281,7 +281,7 @@ class LineUp extends StatelessWidget {
                         backgroundImage: AssetImage("assets/pepe.png"),
                       ),
                       title: const Text("Nicolas Pepe"),
-                      subtitle: const Text("Defender"),
+                      subtitle: const Text("Injury(Back in training)"),
                       trailing: CircleAvatar(
                         backgroundColor: Colors.red.shade200,
                         radius: 15,
@@ -300,7 +300,7 @@ class LineUp extends StatelessWidget {
                         backgroundImage: AssetImage("assets/ode.png"),
                       ),
                       title: const Text("Martin Odeguard"),
-                      subtitle: const Text("Attacker"),
+                      subtitle: const Text("Ankle injury(out for season)"),
                       trailing: CircleAvatar(
                         backgroundColor: Colors.red.shade200,
                         radius: 15,
@@ -319,7 +319,7 @@ class LineUp extends StatelessWidget {
                         backgroundImage: AssetImage("assets/messi.png"),
                       ),
                       title: const Text("Lionel Messi"),
-                      subtitle: const Text("Attacker"),
+                      subtitle: const Text("Injury(Back in training)"),
                       trailing: CircleAvatar(
                         backgroundColor: Colors.red.shade200,
                         radius: 15,
