@@ -59,7 +59,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
         team1: widget.team1,
         team2: widget.team2,
       ),
-      const H2H(),
+      H2H(
+          logo1: widget.logo1,
+          logo2: widget.logo2,
+          team1: widget.team1,
+          team2: widget.team2,
+          color2: widget.color2,
+          color1: widget.color1),
     ];
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
