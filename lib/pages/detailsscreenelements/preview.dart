@@ -505,16 +505,137 @@ class Preview extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: 300,
+                height: 340,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: const [
+                          Text("Key Players",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.bold)),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            height: 56,
+                            child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  const CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    backgroundImage:
+                                        AssetImage("assets/messi.png"),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text("Messi"),
+                                      Text(
+                                        "(Attacker)",
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                    ],
+                                  )
+                                ]),
+                          ),
+                          SizedBox(
+                            height: 56,
+                            child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  const CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    backgroundImage:
+                                        AssetImage("assets/saka.png"),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        "(Attacker)",
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                      Text("Bukayo Saka"),
+                                    ],
+                                  )
+                                ]),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Divider(
+                        thickness: .8,
+                      ),
+                      const stats(text: "Rating"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Goals"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Expected goals(xG)"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Assist"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Minutes per goal"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Shots on target per match"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Matches played"),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      const stats(text: "Minutes played"),
+                    ],
+                  ),
                 ),
               ),
             )
           ],
         ),
       ),
+    );
+  }
+}
+
+class stats extends StatelessWidget {
+  final String text;
+  const stats({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        const Text("10", style: TextStyle(fontSize: 18)),
+        Text(
+          text,
+          style: const TextStyle(color: Colors.grey, fontSize: 18),
+        ),
+        const Text("13", style: TextStyle(fontSize: 18)),
+      ],
     );
   }
 }
